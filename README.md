@@ -1,20 +1,62 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# FastParking App 🚗⚡
 
-# Run and deploy your AI Studio app
+Aplicación Full Stack (MERN) para gestión de estacionamientos inteligentes con navegación simulada.
 
-This contains everything you need to run your app locally.
+## 📋 Requisitos Previos
 
-View your app in AI Studio: https://ai.studio/apps/drive/1JuFsXY_mg_zz0gzIwylQ_8aNd-ow8_2y
+- Node.js (v18 o superior)
+- Una cuenta en MongoDB Atlas (Base de datos en la nube)
 
-## Run Locally
+## 🚀 Instalación en un nuevo dispositivo
 
-**Prerequisites:**  Node.js
+Sigue estos pasos para clonar y ejecutar el proyecto:
 
+### 1. Clonar el repositorio
+```bash
+git clone <URL_DE_TU_REPOSITORIO>
+cd FastParking
+```
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+### 2. Instalar Dependencias
+El proyecto tiene dos partes (Frontend y Backend), debes instalar ambas.
+
+**Frontend (Raíz):**
+```bash
+npm install
+```
+
+**Backend (Carpeta server):**
+```bash
+cd server
+npm install
+cd ..
+```
+
+### 3. Configuración de Base de Datos (Backend)
+1. Ve a la carpeta `server`.
+2. Crea un archivo llamado `.env` (sin nombre, solo la extensión).
+3. Copia el contenido de `.env.example` y pégalo en tu nuevo `.env`.
+4. Reemplaza `MONGO_URI` con tu cadena de conexión real de MongoDB Atlas.
+
+### 4. Poblar Base de Datos (Solo si es nueva)
+Si conectas a una base de datos vacía por primera vez:
+```bash
+cd server
+npm run seed
+```
+
+### 5. Ejecutar el Proyecto
+Necesitas dos terminales abiertas:
+
+**Terminal 1 (Backend):**
+```bash
+cd server
+npm run dev
+```
+
+**Terminal 2 (Frontend):**
+```bash
+npm run dev
+```
+
+Abre tu navegador en `http://localhost:5173`.

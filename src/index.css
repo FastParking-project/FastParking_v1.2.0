@@ -1,6 +1,16 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Global Reset for Full Height Apps */
+html, body, #root {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden; /* Prevent scrolling on the body */
+}
 
 /* Estilos personalizados para mapas 3D */
 .perspective-map {

@@ -29,7 +29,7 @@ export const DashboardScreen: React.FC<DashboardScreenProps> = ({ parkingLabel, 
   };
 
   return (
-    <div className="relative w-full h-full flex flex-col items-center justify-between pb-12 pt-20 bg-gray-950 overflow-hidden">
+    <div className="relative w-full h-[100dvh] flex flex-col items-center justify-between pb-12 pt-20 bg-gray-950 overflow-hidden">
       
       {/* Fondo */}
       <div className="absolute inset-0 z-0 bg-[radial-gradient(circle_at_50%_20%,_#1f2937_0%,_#030712_100%)]" />

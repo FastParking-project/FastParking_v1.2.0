@@ -27,13 +27,13 @@ export const WelcomeScreen: React.FC<WelcomeScreenProps> = ({ onStart }) => {
   };
 
   return (
-    <div className="relative w-full h-full flex flex-col items-center justify-between pb-12 pt-20 overflow-hidden bg-gray-950">
+    <div className="relative w-full h-[100dvh] flex flex-col items-center justify-between pb-12 pt-20 overflow-hidden bg-gray-950">
       
       {/* Capa de Fondo CSS */}
       <div className="absolute inset-0 z-0">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_-20%,_#374151_0%,_#111827_40%,_#000000_100%)]" />
         {/* Luces dinámicas */}
-        <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-amber-500/10 rounded-full blur-[100px] animate-pulse" style={{ animationDuration: '4s' }} />
+        <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-amber-500/10 rounded-full blur-[300px] animate-pulse" style={{ animationDuration: '2s' }} />
         <div className="absolute bottom-1/4 right-1/4 w-64 h-64 bg-blue-600/10 rounded-full blur-[100px] animate-pulse" style={{ animationDuration: '6s', animationDelay: '1s' }} />
       </div>
       
